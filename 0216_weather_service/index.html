@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="timer-wrapper">
+        <div class="timer"></div>
+        <div class="timer-content"></div>
+      </div>
+
+      <div class="memo-input-wrapper m-3">
+        <input
+          type="text"
+          class="memo-input p-2"
+          placeholder="오늘 할 일을 입력하세요!"
+        />
+      </div>
+
+      <div class="memo-wrapper">
+        <div class="memo-title">TODAY</div>
+        <div class="memo"></div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <div
+        class="modal-button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      ></div>
+
+      <!-- Modal -->
+      <div
+        class="modal"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- <div class="modal-body">
+              <div class="card border-dark mb-3">
+                <div class="card-header text-dark">
+                  2021-02-02 <span>오전</span>
+                </div>
+                <div class="card-body text-dark d-flex">
+                  <div class="flex-grow-1">
+                    <h5 class="card-title">
+                      <img
+                        src="./images/001-cloud.png"
+                        width="40px"
+                        height="40px"
+                      />
+                    </h5>
+                    <p class="card-text">맑음</p>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h5 class="card-title">
+                      <img
+                        src="./images/001-cloud.png"
+                        width="40px"
+                        height="40px"
+                      />
+                    </h5>
+                    <p class="card-text">맑음</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="modal-body d-flex">
+  
+            </div>
+
+            <div class="modal-footer border-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
